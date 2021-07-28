@@ -1,0 +1,12 @@
+.footer {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:$color-oscuro;
+    color: $color-claro;
+    &__terminos li{
+        display: inline;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,19 @@
+.insignias {
+    display: block;
+    margin: 25px auto;
+    width: 90%;
+    text-align: center;
+
+    &__titulo{
+        @include titulos($Fuente1);
+    }
+
+    &__principales {
+        @include grid;
+        @include uInsignias;
+    }
+    &__totales {
+        @include grid;
+        @include uInsignias;
+    }
+}

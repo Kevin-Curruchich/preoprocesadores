@@ -1,0 +1,73 @@
+$Fuente1: 'Poppins', sans-serif;
+$Fuente2: 'Oswald', sans-serif;
+$color-primario: #ff6200;
+$color-claro: #FFFFFF;
+$color-oscuro: #0b0b0a;
+
+@mixin titulos($fuente) {
+    @if $fuente == $Fuente1 {
+        font-family: $Fuente1;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 1.6rem;
+        color: $color-claro;
+        
+    }
+    @else {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: $Fuente2;
+        font-weight: bold;
+        color: $color-claro;
+        opacity: 0.7;
+    }
+}
+
+@mixin grid {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: (repeat(2, 1fr));
+    gap: 10px;
+}
+
+@mixin uInsignias {
+    .insignias--elemento {
+        padding: 10px;
+        grid-column: span 1;
+        background-color: rgb(255, 255,255, 0.1);
+        border-radius: 20px;
+        box-shadow: 6px 12px 27px -8px rgba(0,0,0,0.48);
+    }
+    .insignias--elemento img{
+        display: block;
+        margin: 10px auto;
+        width: 80px;
+    }
+
+    .insignias--elemento span {
+        @include titulos($Fuente2)
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5% 0;
+    background-color: $color-primario;
+    font-size: 1rem;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: $Fuente1;
+}

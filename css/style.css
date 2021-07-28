@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5% 0;
+  background-color: #ff6200;
+  font-size: 1rem;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0b0b0a;
+  color: #FFFFFF;
+}
+
+.perfil {
+  margin: 0 auto;
+  width: 90%;
+}
+.perfil__avatar {
+  display: block;
+  margin: 0 auto;
+  height: 150px;
+  border-radius: 2rem;
+}
+.perfil__nombre {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+.perfil__estadisticas {
+  width: 100%;
+  border-radius: 20px;
+  padding: 15px 10px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.insignias {
+  display: block;
+  margin: 25px auto;
+  width: 90%;
+  text-align: center;
+}
+.insignias__titulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+}
+.insignias__principales {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  width: 100%;
+  padding: 0 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.insignias__principales .insignias--elemento {
+  padding: 10px;
+  -ms-grid-column-span: 1;
+  grid-column: span 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 12px 27px -8px rgba(0, 0, 0, 0.48);
+          box-shadow: 6px 12px 27px -8px rgba(0, 0, 0, 0.48);
+}
+.insignias__principales .insignias--elemento img {
+  display: block;
+  margin: 10px auto;
+  width: 80px;
+}
+.insignias__principales .insignias--elemento span {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.insignias__totales {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  width: 100%;
+  padding: 0 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.insignias__totales .insignias--elemento {
+  padding: 10px;
+  -ms-grid-column-span: 1;
+  grid-column: span 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 12px 27px -8px rgba(0, 0, 0, 0.48);
+          box-shadow: 6px 12px 27px -8px rgba(0, 0, 0, 0.48);
+}
+.insignias__totales .insignias--elemento img {
+  display: block;
+  margin: 10px auto;
+  width: 80px;
+}
+.insignias__totales .insignias--elemento span {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.footer {
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0b0b0a;
+  color: #FFFFFF;
+}
+.footer__terminos li {
+  display: inline;
+  padding: 0 10px;
+}

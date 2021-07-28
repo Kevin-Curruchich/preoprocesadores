@@ -1,0 +1,25 @@
+.perfil {
+    margin: 0 auto;
+    width: 90%;
+    &__avatar {
+        display: block;
+        margin: 0 auto;
+        height: 150px;
+        border-radius: 2rem;
+    }
+    &__nombre {
+        @include titulos($Fuente1);
+        margin-top: 10px;
+    }
+    &__estadisticas {
+        width: 100%;
+        border-radius: 20px;
+        padding: 15px 10px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        background-color: $color-claro;
+        text-align: center;
+    }
+}
+

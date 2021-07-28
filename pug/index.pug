@@ -1,0 +1,30 @@
+extend componentes/plantilla.pug
+block contenido
+    main 
+        section.perfil
+            img(src="../images/foto.jpg", alt="Kevin" class="perfil__avatar")
+            p.perfil__nombre Kevin Curruchich
+            .perfil__estadisticas
+                .estadisticas--elemento
+                    h3 15k
+                    span Seguidores
+                .estadisticas--elemento
+                    h3 15hrs
+                    span Juego
+                .estadisticas--elemento
+                    h3 15
+                    span Insignias
+
+        section.insignias
+            h2.insignias__titulo Insignias Principales
+            .insignias__principales
+                +insignia("oro","Valorant","Buen jugador")
+                +insignia("plata","PUBG","50 MVP")
+
+            h3.insignias__titulo Todas las insignias
+            .insignias__totales
+                +insignia("bronce","APEX","Mejor de la partida")
+                +insignia("oro","APEX","Mejor jugador")
+                +insignia("oro","APEX","El mejor de todos")
+                +insignia("bronce","APEX","Mejor jugador")
+                +insignia("plata","PUBG","Bien Bobo")
